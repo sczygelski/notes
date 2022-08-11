@@ -2,6 +2,8 @@ const express = require('express')
 const PORT = process.nextTick.PORT || 3001;
 const app = express()
 const { db } = require('./db/db')
+const api = require('./routes/notes.js');
+const path = require('path')
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
